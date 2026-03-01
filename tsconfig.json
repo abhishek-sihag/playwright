@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "types": ["node", "@playwright/test"],
+
+    "resolveJsonModule": true,
+    "outDir": "dist"
+  },
+
+  "include": [
+    "tests",
+    "**/*.ts",
+    "pages",
+    "utils",
+    "playwright.config.ts", 
+    "fixtures/baseFixtures.ts"  ]
+}
