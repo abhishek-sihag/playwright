@@ -25,7 +25,7 @@ const testData = readExcel('test-data/form_data_20_rows.xlsx');
 //     });
 // });
 
-test.skip('Auto Test Practice', () => {
+test.describe('Auto Test Practice', () => {
     test('Auto Test 1', async ({pracPage, request}) => {
         const autotestprac = new AutoTestPage(pracPage, request);
         await autotestprac.enterName('Aparik');

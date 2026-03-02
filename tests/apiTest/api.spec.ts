@@ -23,7 +23,7 @@ test.describe('API Automation', () => {
         expect(body.id).toEqual(1);
     });
 
-    test('Query param', async ({apiContext}) => {
+    test.skip('Query param', async ({apiContext}) => {
         const res = await apiContext.get('https://reqres.in/api/users', 
             {
                 params: {

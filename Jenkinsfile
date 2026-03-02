@@ -15,9 +15,15 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Tests APIs') {
             steps {
-                bat 'npx playwright test'
+                bat 'npx playwright test --project=API'
+            }
+        }
+
+        stage('Run Tests UI') {
+            steps {
+                bat 'npx playwright test --project=UI'
             }
         }
     }
