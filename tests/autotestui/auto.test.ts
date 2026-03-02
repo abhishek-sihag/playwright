@@ -5,12 +5,14 @@ test.describe('Test', () => {
 
     test('Auto Test', async ({softPage}) => {
         const ap = new SoftPracPage(softPage);
+        await ap.goto();
         await ap.routeTest();
         await ap.clickHome();
     });
 
     test('step 2', async ({softPage}) => {
         const ap = new SoftPracPage(softPage);
+        await ap.goto();
         console.log(await ap.brokenLinks());
         //await ap.productSort();
         //await ap.clickContact();

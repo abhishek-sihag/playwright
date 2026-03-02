@@ -34,8 +34,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    baseURL: process.env.BASE_URL || 'https://practicesoftwaretesting.com/',
-    //'https://testautomationpractice.blogspot.com/',
+    baseURL: process.env.BASE_URL || 'https://testautomationpractice.blogspot.com/',
     extraHTTPHeaders: {
       'Content-Type': 'application/json'
     },

@@ -9,6 +9,10 @@ export class SoftPracPage {
     addToCart = () => this.page.getByText('Add to Cart');
     sort = () => this.page.locator('[data-test="sort"]');
 
+    async goto() {
+        await this.page.goto('https://practicesoftwaretesting.com/');
+    }
+    
     async clickHome() {
         await this.home().click();
     }
